@@ -13,6 +13,13 @@ body {
     display: flex;
 }
 
+a {color : red; 
+   text-decoration : none;
+   font-size : larger}
+a:visited {color : black}
+a:active {color : orange}
+a:hover {color : blue}     
+
 /* Sidebar Navigation */
 #sidebar {
     position: fixed;
