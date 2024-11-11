@@ -218,21 +218,21 @@ body {
   }
   .timeline h1 {
     font-family: "Saira", sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.0px;
     font-weight: 100;
-    font-size: 1.4em;
+    font-size: 1.0em;
   }
   .timeline h2,
   .timeline h3 {
     font-family: "Saira", sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.0px;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .timeline .event {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
     position: relative;
   }
   .timeline .event:last-of-type {
@@ -257,7 +257,7 @@ body {
     font-family: "Saira", sans-serif;
   }
   .timeline .event:after {
-    /* box-shadow: 0 0 0 4px white; */
+    box-shadow: 0 0 0 3px teal;
     left: -55.85px;
     background: white;
     border-radius: 50%;
