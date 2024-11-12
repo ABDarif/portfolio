@@ -601,7 +601,7 @@ thead th.active,tbody td.active {
 /* Profile Picture Styling */
 .profile-picture {
     position: fixed;
-    top: 30px; /* Adjust this for desired vertical positioning */
+    top: 50px; /* Adjust this for desired vertical positioning */
     right: 100px; /* Adjust this for desired horizontal positioning */
     width: 250px; /* Adjust for desired size */
     height: 250px;
