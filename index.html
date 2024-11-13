@@ -9,19 +9,10 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Sidebar Navigation
-    <nav id="sidebar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav> -->
+
     <!-- Placeholder for the sidebar -->
     <div id="sidebar"></div>
     <script>
-        // Load sidebar.html content into the placeholder div
         document.addEventListener("DOMContentLoaded", function () {
           fetch("sidebar.html")
             .then(response => response.text())
@@ -31,8 +22,6 @@
             .catch(error => console.error("Error loading sidebar:", error));
         });
       </script>
-      
-
 
     <!-- Main Content -->
     <main id="content">
