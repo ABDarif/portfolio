@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="sidebar"></div>
+    <script>
+        // Load sidebar.html content into the placeholder div
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById("sidebar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading sidebar:", error));
+        });
+      </script>
+
+    <!-- Main Content -->
+    <main id="content">
+      <!-- Experience Section -->
+        <section id="experience" class="section">
+            <br><br>
+            <!-- <h2>Experience</h2>
+                <br>
+                    <h4>IEEE BRAC University Student Branch Chapter</h4>
+                    <p>March 2023 - Present</p>
+                    <p>Vice-Chair | IEEE Robotics & Automation Society BRACU SBC | January 2024 - Present</p>
+                    <p>General Member | March 2023 - December 2023</p>
+                <br>
+                    <h4>BRACU ALTER</h4>
+                    <p>March 2023 - October 2023</p>
+                    <p>Senior Contributor of Artificial Intelligence & Firmware Team</p>
+                <br>
+                    <h4>BRACU Dichari</h4>
+                    <p>June 2022 - February 2023</p>
+                    <p>Senior Contributor of Artificial Intelligence & Firmware Team | October 2022 - February 2023</p>
+                    <p>Junior Contributor of Control & Software Team | June 2022 - October 2022</p> -->
+            <!-- Experience Section -->
+            <div class="organization-logos">
+                <img src="https://ieee.dbit.in/res/img/ieee_white.png" 
+                    alt="Profile Picture" width="150" height="50">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgip8suy3Narz5O9BeVbKuL3-l-EN7hAOuw&s" 
+                    alt="Profile Picture" width="50" height="50">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKSawUZwvswtBjBrd_lX-xkngfjHqunCt_w&s" 
+                    alt="Profile Picture" width="50" height="50">
+            </div>
+            <div id="timeline-content">
+            <ul class="timeline">
+                <li class="event" data-date="MAR 2023 - Present">
+                <h3>IEEE BRAC University Student Branch Chapter</h3> <br>
+                <p> Vice-Chair | IEEE Robotics & Automation Society BRACU SBC | January'24 - Present</p>
+                <p> General Member | March'23 - December'23</p>
+                </li>
+                <li class="event" data-date="MAR - OCT 2023">
+                <h3>BRACU ALTER</h3> <br>
+                <p> Senior Contributor | Artificial Intelligence & Firmware</p>
+                </li>
+                <li class="event" data-date="JUNE 2022 - FEB 2023">
+                <h3>BRACU Dichari</h3> <br>
+                <p> Senior Contributor | Artificial Intelligence & Firmware | October'22 - February'23</p>
+                <p> Junior Contributor | Control & Software | June'22 - October'22</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Footer Section -->
+        <footer id="footer">
+            <br>
+            <p id="footer-text"></p>
+        </footer>
+    </main>
+</body>
+</html>

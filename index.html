@@ -9,7 +9,7 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
+    <!-- Sidebar Navigation
     <nav id="sidebar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -17,12 +17,29 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
         </ul>
-    </nav>
+    </nav> -->
+    <!-- Placeholder for the sidebar -->
+    <div id="sidebar"></div>
+    <script>
+        // Load sidebar.html content into the placeholder div
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById("sidebar").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading sidebar:", error));
+        });
+      </script>
+      
+
 
     <!-- Main Content -->
     <main id="content">
         <!-- Home Section -->
         <section id="home" class="section">
+            <br><br><br><br><br>
+            <br><br><br><br><br>
             <br><br><br><br><br>
             <h1>Abdullah Arif</h1>
             <!-- Profile Picture -->
@@ -48,9 +65,10 @@
         </section>
 
         <!-- About Section -->
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
         <section id="about" class="section">
-            <br><br><br><br><br>
-            <h2>About Me</h2>
             <p>
                 I’m a developer who loves building accessible, pixel-perfect, user interfaces.
                 I most enjoy building software in the sweet spot where design and engineering meet — things that look good, built 
@@ -83,125 +101,11 @@
                 In my spare time, I’m usually playing video games, reading fiction books, hanging out with my 
                 friends & families, or roaming around my town & countryside on my bicycle
             </p>
-
+            <br><br><br>
         </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <br><br><br><br><br>
-            <!-- <h2>Experience</h2>
-                <br>
-                    <h4>IEEE BRAC University Student Branch Chapter</h4>
-                    <p>March 2023 - Present</p>
-                    <p>Vice-Chair | IEEE Robotics & Automation Society BRACU SBC | January 2024 - Present</p>
-                    <p>General Member | March 2023 - December 2023</p>
-                <br>
-                    <h4>BRACU ALTER</h4>
-                    <p>March 2023 - October 2023</p>
-                    <p>Senior Contributor of Artificial Intelligence & Firmware Team</p>
-                <br>
-                    <h4>BRACU Dichari</h4>
-                    <p>June 2022 - February 2023</p>
-                    <p>Senior Contributor of Artificial Intelligence & Firmware Team | October 2022 - February 2023</p>
-                    <p>Junior Contributor of Control & Software Team | June 2022 - October 2022</p> -->
-            <!-- Experience Section -->
-            <h2>Experience</h2>
-            <div id="timeline-content">
-            <ul class="timeline">
-                <li class="event" data-date="MAR 2023 - Present">
-                <h3>IEEE BRAC University Student Branch Chapter</h3> <br>
-                <p> Vice-Chair | IEEE Robotics & Automation Society BRACU SBC | January'24 - Present</p>
-                <p> General Member | March'23 - December'23</p>
-                </li>
-                <li class="event" data-date="MAR - OCT 2023">
-                <h3>BRACU ALTER</h3> <br>
-                <p> Senior Contributor | Artificial Intelligence & Firmware</p>
-                </li>
-                <li class="event" data-date="JUNE 2022 - FEB 2023">
-                <h3>BRACU Dichari</h3> <br>
-                <p> Senior Contributor | Artificial Intelligence & Firmware | October'22 - February'23</p>
-                <p> Junior Contributor | Control & Software | June'22 - October'22</p>
-                </li>
-            </ul>
-            </div>
-
-
-        </section>
-
-        <!-- Projects Section -->
-        <!-- <section id="projects" class="section">
-            <h2>Projects</h2>
-            <br>
-            <h4>VangtiChai <a href="https://github.com/ABDarif/VangtiChai">↗</a> </h4>
-            <p>VangtiChai is an app that takes an amount of money as input & shows how many notes are needed to meet that specified amount.</p>
-        <br>
-            <h4>BracNav <a href="https://github.com/ABDarif/BracNav">↗</a> </h4>
-            <p>A video game inspired mapping & real-time navigation app for the inside of the new campus of BRAC University</p>
-        <br>
-            <h4>Immersive Text-to-Speech Model <a href="https://github.com/ABDarif/pdf_analyzer">↗</a> </h4>
-            <p>A text to speech model that mainly works as a pdf reader with realistic voices, distinguished actors, proper punctuations & matching background sounds</p>
-        </section> -->
-
-
-
-        <section id="projects" class="section">
-            <br><br><br><br><br>
-            <h2>Projects</h2>
-            <br>
-            <div class="project-table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> Title </th>
-                            <th> Description </th>
-                            <th> Status </th>
-                            <th> Link </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> VangtiChai </td>
-                            <td> VangtiChai is an app that takes an amount of money as input <br> 
-                                & shows how many notes are needed to meet that specified amount </td>
-                            <td>
-                                <p class="status delivered"></p>
-                            </td>
-                            <td> <a href="https://github.com/ABDarif/VangtiChai">↗</a> </td>
-                        </tr>
-                        <tr>
-                            <td> BracNav </td>
-                            <td> A video game inspired mapping & real-time navigation app for <br>
-                                the inside of the new campus of BRAC University </td>
-                            <td>
-                                <p class="status pending"></p>
-                            </td>
-                            <td> <a href="https://github.com/ABDarif/BracNav">↗</a> </td>
-                        </tr>
-                        <tr>
-                            <td> Immersive Text-to-Speech Model </td>
-                            <td> A text to speech model that mainly works as a pdf reader with <br>
-                                realistic voices, distinguished actors, proper punctuations & <br>
-                                matching background sounds </td>
-                            <td>
-                                <p class="status pending"></p>
-                            </td>
-                            <td> <a href="https://github.com/ABDarif/pdf_analyzer">↗</a> </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-
-
 
         <!-- Footer Section -->
         <footer id="footer">
-            <p>
-                Loosely designed with raw HTML, CSS & JavaScript and coded in Visual Studio Code. <br>
-                The Page location & Last Modified part is coded with JavaScript. <br>
-                All text is set in the Arial typeface.
-            </p>
             <br>
             <p id="footer-text"></p>
         </footer>

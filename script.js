@@ -35,5 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Footer Date and Location
     const footerText = document.getElementById("footer-text");
-    footerText.innerHTML = `Page location: ${window.location.href} || Last modified: ${document.lastModified}`;
+    footerText.innerHTML = `Page location: ${window.location.href} & Last modified: ${document.lastModified}`;
 });
