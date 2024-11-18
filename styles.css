@@ -150,18 +150,7 @@ footer {
 html {
     scroll-behavior: smooth;
 }
-/* Mobile Styles */
-@media (max-width: 768px) {
-    #sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    #content {
-        margin-left: 0;
-        width: 100%;
-    }
-}
+
 hr.dashed {
     border-top: 3px dashed #bbb;
   }
@@ -261,14 +250,6 @@ body {
     content: "";
     top: 5px;
   }
-  
-@media print {
- .table, .table__body {
-  overflow: visible;
-  height: auto !important;
-  width: auto !important;
- }
-}
 
 @page {
     size: landscape;
@@ -456,13 +437,6 @@ tbody tr.hide td img {
     background-color: #6fcaea;
 }
 
-
-@media (max-width: 1000px) {
-    td:not(:first-of-type) {
-        min-width: 12.1rem;
-    }
-}
-
 thead th span.icon-arrow {
     display: inline-block;
     width: 1.3rem;
@@ -640,4 +614,51 @@ thead th.active,tbody td.active {
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    #sidebar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the list items */
+        margin: 0;
+        padding: 0;
+    }
+    
+    #sidebar ul li {
+        margin: 10px 0;
+        display: block;
+    }
+    
+    #sidebar ul li a {
+        font-size: 1.2em;
+        color: #f8fbfa;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #content {
+        margin: 0 auto; /* Centers the element horizontally */
+        padding: 50px;
+        padding-top: 0px;
+        width: 90%; /* Or any desired percentage or fixed width */
+    }    
 }
