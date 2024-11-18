@@ -637,7 +637,7 @@ thead th.active,tbody td.active {
     }
     #sidebar ul {
         list-style: none;
-        display: flex;
+        display: inline;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center the list items */
         margin: 0;
@@ -646,7 +646,7 @@ thead th.active,tbody td.active {
     
     #sidebar ul li {
         margin: 10px 0;
-        display: block;
+        display: inline;
     }
     
     #sidebar ul li a {
