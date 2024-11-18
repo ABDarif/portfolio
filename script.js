@@ -37,3 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const footerText = document.getElementById("footer-text");
     footerText.innerHTML = `Page location: ${window.location.href} & Last modified: ${document.lastModified}`;
 });
+
+document.querySelector('.sidebar-toggle').addEventListener('click', () => {
+    document.querySelector('.sidebar').classList.toggle('open');
+  });
+  
