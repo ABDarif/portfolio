@@ -1260,3 +1260,166 @@ h1:hover, h2:hover, h3:hover {
         transform: translateX(2px);
     }
 }
+
+/* =============================
+   MOBILE TOUCH EFFECTS
+   ============================= */
+
+/* Touch effects for mobile devices */
+@media (hover: none) and (pointer: coarse) {
+    /* Sidebar navigation touch effects */
+    #sidebar ul li a {
+        transition: all 0.2s ease;
+    }
+    
+    #sidebar ul li a:active {
+        background: rgba(100, 255, 218, 0.2);
+        transform: scale(0.95);
+        box-shadow: 0 2px 8px rgba(100, 255, 218, 0.3);
+    }
+    
+    /* Profile picture touch effects */
+    .profile-picture:active {
+        transform: scale(0.98);
+        border-color: #64ffda;
+        box-shadow: 0 8px 25px rgba(100, 255, 218, 0.4);
+    }
+    
+    .profile-picture:active img {
+        transform: scale(1.05);
+    }
+    
+    /* Timeline events touch effects */
+    .timeline .event:active {
+        background: rgba(100, 255, 218, 0.1);
+        transform: translateX(5px) scale(0.98);
+        box-shadow: 0 3px 12px rgba(100, 255, 218, 0.2);
+    }
+    
+    .timeline .event:active:after {
+        background: #64ffda;
+        box-shadow: 0 0 0 4px rgba(100, 255, 218, 0.5);
+        transform: scale(1.3);
+    }
+    
+    /* Social links touch effects */
+    .social-links a:active {
+        color: #64ffda;
+        transform: scale(0.9);
+        box-shadow: 0 4px 15px rgba(100, 255, 218, 0.4);
+        background: rgba(100, 255, 218, 0.2);
+    }
+    
+    /* Organization logos touch effects */
+    .organization-logos img:active {
+        transform: scale(0.95) rotate(-1deg);
+        box-shadow: 0 4px 20px rgba(100, 255, 218, 0.3);
+        background: rgba(100, 255, 218, 0.15);
+    }
+    
+    /* Project cards touch effects */
+    .project-card:active {
+        background: rgba(100, 255, 218, 0.15);
+        transform: translateY(-1px) scale(0.98);
+        box-shadow: 0 4px 20px rgba(100, 255, 218, 0.3);
+    }
+    
+    /* Project title links touch effects */
+    .project-title a:active {
+        color: #0c7b93;
+        transform: scale(0.9);
+    }
+    
+    /* Buttons touch effects */
+    .button:active {
+        background: rgba(100, 255, 218, 0.2);
+        border-color: #64ffda;
+        transform: translateY(1px) scale(0.98);
+        box-shadow: 0 6px 20px rgba(100, 255, 218, 0.3);
+    }
+    
+    /* Paragraphs touch effects */
+    p:active {
+        color: #ccd6f6;
+        background: rgba(100, 255, 218, 0.1);
+        transform: translateX(3px);
+    }
+    
+    /* Headings touch effects */
+    h1:active, h2:active, h3:active {
+        color: #64ffda;
+        text-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
+        transform: translateX(3px);
+    }
+    
+    /* Links touch effects */
+    a:active {
+        color: #64ffda;
+        text-shadow: 0 0 8px rgba(100, 255, 218, 0.6);
+    }
+    
+    /* Footer touch effects */
+    footer:active {
+        color: #ccd6f6;
+        border-top-color: #64ffda;
+    }
+    
+    /* Table rows touch effects */
+    .project-table-wrapper tr:active {
+        background: rgba(100, 255, 218, 0.1);
+        transform: scale(0.99);
+    }
+    
+    /* Table links touch effects */
+    .project-table-wrapper td:first-child a:active {
+        color: #0c7b93;
+        transform: scale(0.9);
+    }
+    
+    /* Status indicators touch effects */
+    .status:active {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px rgba(100, 255, 218, 0.6);
+    }
+    
+    .status.delivered:active {
+        box-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+    }
+    
+    .status.pending:active {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+}
+
+/* Touch feedback for all interactive elements */
+@media (hover: none) and (pointer: coarse) {
+    /* Add subtle touch feedback to all clickable elements */
+    [onclick], a, button, .button, .project-card, .timeline .event {
+        -webkit-tap-highlight-color: rgba(100, 255, 218, 0.2);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Prevent text selection on touch */
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Allow text selection in specific areas */
+    p, h1, h2, h3, .project-description {
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+}
